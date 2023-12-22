@@ -3,19 +3,19 @@
 ## Veri Setinin oluşturulması
 - Öncelikle steamden seçtiğim popüler oyunların mağaza sayfasından Müşteri İncelemelerinden verileri tek tek kopyalayıp excel'e kayıt ettim. (Toplam 500 adet verimiz var.)
 - Daha sonra Olumlu ise 1 - Olumsuz ise 0 yazarak etiketledim. + Olabildigince gördüğüm argo kelimeleri sansürlemeye çalıştım.
-- ![Dataset](https://github.com/dedasame/AnalysisModel/assets/106378288/6b155608-5890-48df-a11d-ce96c24d9342)
-
+- ![Dataset](https://github.com/dedasame/AnalizModeli/assets/106378288/f9ceb2e2-5c2d-4d86-8b19-8dfe225b0f69)
 
 ## Veri Setinin Temizlenmesi
 #### CleanDataSet.ipynb dosyasından kodlara ulaşabilirsiniz.
 
 - Bende derste kullandığımız stop_word dosyasını kullandım. Ve temizlemek için clean_text fonksiyonunu kullandım.
 - Veri setimizi aşağıdaki fotoğraftaki gibi görebiliyoruz.
-![dataset_v1](https://github.com/dedasame/AnalysisModel/assets/106378288/684afbfb-bdf6-403e-b70a-2f61835543c7)
+![dataset_v1](https://github.com/dedasame/AnalizModeli/assets/106378288/a5f6d8f6-4930-492a-8d65-ec93bb34a29e)
+
 - Daha sonra ``` df['clean'] = df['yorumlar'].apply(clean_text) ``` ile bütün yorumalar satırları üzerinde clean_text fonksiyonumuzu uygulayıp clean isimli sütuna kayıt ediyoruz.
 - ``` df.to_excel('temizlenmis_veriler.xlsx', index=False) ``` ile de yeni dosyamızı excel olarak tekrar kayıt ediyoruz.
 - Temizlenmiş verileri kontrol etmek için derste kullandığımız fonksiyonu kullanıyorum.
-![dataset_v2](https://github.com/dedasame/AnalysisModel/assets/106378288/c45aa9f9-98cc-4220-ab0d-cb42ab819dcc)
+![dataset_v2](https://github.com/dedasame/AnalizModeli/assets/106378288/284109f6-467c-4168-b281-613bb014dbb4)
 
 ## Modelin Oluşturulması
 
