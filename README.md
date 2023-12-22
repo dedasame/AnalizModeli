@@ -21,7 +21,9 @@
 - NB Test F1 Score: 0.7401574803149606
 - DT Test F1 Score: 0.6346153846153846
 - Grid Search: 0.54
-- Sonuçlar ne yazıkki beklediğimden kötü çıktı. Bunun sebebinin veri setimin kötü ve küçük olmasından kaynaklı olduğunu düşünüyorum. Bu yüzden internetten daha büyük bir veri seti bulamaya çalıştım. 
+- Sonuçlar ne yazıkki beklediğimden kötü çıktı. Bunun sebebinin veri setimin kötü ve küçük olmasından kaynaklı olduğunu düşünüyorum.
+#### ikinci deneme klasöründeki kodların açıklaması
+- Bu yüzden internetten daha büyük bir veri seti bulamaya çalıştım. 
 - https://www.kaggle.com/datasets/sridharstreaks/game-reviews-dataset?select=review_info.csv
 - Bu linkteki veri setinde türkçe yorumlarında olduğunu gördüm ve öncelikle türkçe yorumları ayıklayarak başladım.
 - Daha sonra ayıklanmış veriyi ilk başta yaptığımız gibi temizledim.
