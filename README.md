@@ -25,7 +25,8 @@
 #### ikinci deneme klasöründeki kodların açıklaması
 - Bu yüzden internetten daha büyük bir veri seti bulamaya çalıştım. 
 - https://www.kaggle.com/datasets/sridharstreaks/game-reviews-dataset?select=review_info.csv
+``` languages = ["turkish"] ```
+``` df = df[df.language.isin(languages)].copy() ```
+``` df.to_excel('turkce_veriler.xlsx', index=False) ``` bu kodlarla sadece türkçe yorumları ayıkladık.
 - Bu linkteki veri setinde türkçe yorumlarında olduğunu gördüm ve öncelikle türkçe yorumları ayıklayarak başladım.
-- Daha sonra ayıklanmış veriyi ilk başta yaptığımız gibi temizledim.
-- 
-
+- Daha sonra ayıklanmış veriyi ilk başta yaptığımız gibi temizledim. Toplam 21320 adet türkçe yorum var.
