@@ -22,6 +22,8 @@
 - NB Test F1 Score: 0.7401574803149606
 - DT Test F1 Score: 0.6346153846153846
 - Grid Search: 0.54
-
 - Sonuçlar ne yazıkki beklediğimden kötü çıktı. Bunun sebebinin veri setimin kötü ve az olmasından kaynaklı olduğunu düşünüyorum.
-  
+
+- Aşağıdaki linkten turkce yorumlari cektim.
+- https://www.kaggle.com/datasets/sridharstreaks/game-reviews-dataset?select=review_info.csv
+
