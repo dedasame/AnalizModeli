@@ -3,7 +3,7 @@
 ## Veri Setinin oluşturulması
 - Öncelikle steamden seçtiğim popüler oyunların mağaza sayfasından Müşteri İncelemelerinden verileri tek tek kopyalayıp excel'e kayıt ettim. (Toplam 500 adet verimiz var.)
 - Daha sonra Olumlu ise 1 - Olumsuz ise 0 yazarak etiketledim. + Olabildigince gördüğüm argo kelimeleri sansürlemeye çalıştım.
-- ![Dataset](https://github.com/dedasame/AnalizModeli/assets/106378288/f9ceb2e2-5c2d-4d86-8b19-8dfe225b0f69)
+- ![Dataset](https://github.com/dedasame/AnalizModeli/assets/106378288/f9ceb2e2-5c2d-4d86-8b19-8dfe225b0f69 | width=100)
 
 ## Veri Setinin Temizlenmesi
 #### CleanDataSet.ipynb dosyasından kodlara ulaşabilirsiniz.
