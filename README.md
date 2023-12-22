@@ -11,6 +11,7 @@
 - Bende derste kullandığımız stop_word dosyasını kullandım. Ve temizlemek için clean_text fonksiyonunu kullandım.
 - Veri setimizi aşağıdaki fotoğraftaki gibi görebiliyoruz.
 ![dataset_v1](https://github.com/dedasame/AnalizModeli/assets/106378288/a5f6d8f6-4930-492a-8d65-ec93bb34a29e)
+<img src="(https://github.com/dedasame/AnalizModeli/assets/106378288/a5f6d8f6-4930-492a-8d65-ec93bb34a29e)" width="48">
 
 - Daha sonra ``` df['clean'] = df['yorumlar'].apply(clean_text) ``` ile bütün yorumalar satırları üzerinde clean_text fonksiyonumuzu uygulayıp clean isimli sütuna kayıt ediyoruz.
 - ``` df.to_excel('temizlenmis_veriler.xlsx', index=False) ``` ile de yeni dosyamızı excel olarak tekrar kayıt ediyoruz.
