@@ -104,6 +104,5 @@ DT Test F1: 0.9028392067341989
 Grid Search Train: 0.8585968738640495  
 Grid Search Test:0.8507390356190938  
 
-
-
+Sanırım sonuçlar bir önceki veri setime göre daha iyi. Okuduğunuz için teşekkür ederim. :)
 
