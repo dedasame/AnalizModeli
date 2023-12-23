@@ -21,7 +21,7 @@ Grid Search: 0.54
 Sonuçlar ne yazıkki beklediğimden kötü çıktı. Bunun sebebinin veri setimin kötü ve küçük olmasından kaynaklı olduğunu düşünüyorum.
 
 
-## Tekrardan
+# Tekrardan
 Buradan sonrası tekrar bir veri seti bulup onu temizleyip aynı modellerimde test edilmesini anlatıyor.
 ## Veri setinin oluşturulması
 * İnternetten daha büyük bir veri seti bulamaya çalıştım. Ve aşağıdaki linkte türkçe yorumların olduğunu da gördüm.  
