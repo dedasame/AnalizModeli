@@ -117,6 +117,11 @@ DT Test F1: 0.9028392067341989
 Grid Search Train: 0.8585968738640495  
 Grid Search Test:0.8507390356190938  
 
-Sanırım sonuçlar bir önceki veri setime göre daha iyi. 
-Eğer steam gibi bir yerden oyun yorumları ile alakalı veri çekim yöntemi bulabilseydim o şekilde çekip etiketleyecektim. Ancak ne yazıkki bulamadım. Google Play'de bir uygulama yüklemeden çekmeme izin verilmiyordu. Bende son çarem olarak kaggle'dan hazır seti kullandım.
+Sanırım sonuçlar bir önceki veri setime göre daha iyi.  
+
+Oyun yorumları ile ilgili veri çekmeye çalışma sürecim:  
+- Google play herhangi bir uygulama yüklemeden (developer olmadan) uygulama yorumu çekmeme izin vermiyordu.
+- Steam'dende çekme yolunu bulamadım. 
+- Reddit çok kullanmadığım için belli başlı oyunların subredditlerini aramaya çalıştım ancak çoğunlukla ingilizceydi. Yeterli türkçe veri bulamadım.
+- Bu nedenle son çarem olarak kaggle'dan hazır veri setini kullandım.
 
