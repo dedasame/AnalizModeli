@@ -91,7 +91,6 @@ Grid Search Train: 0.7275
 Grid Search Test: 0.55  
 Sonuçlar ne yazıkki beklediğimden kötü çıktı. Bunun sebebinin veri setimin kötü ve küçük olmasından kaynaklı olduğunu düşünüyorum.
 
-
 # Tekrardan
 Buradan sonrası tekrar bir veri seti bulup onu temizleyip aynı modellerimde test edilmesini anlatıyor.
 ## Veri setinin oluşturulması
