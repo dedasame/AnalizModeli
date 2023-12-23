@@ -72,10 +72,10 @@ Derste yaptığımız NB ,Desicion Tree, Grid Search örneklerini kendi veri set
 ### Farklı Modellerdeki Sonuçlar:  
 NB Train F1: 0.9428007889546351  
 NB Test F1: 0.7401574803149606  
-DT Train F1: 0.9979035639412999  
-DT Test F1: 0.6666666666666666   
-Grid Search Train: 0.7275
-Grid Search Test: 0.55
+DT Train F1: 0.9979035639412999    
+DT Test F1: 0.6666666666666666     
+Grid Search Train: 0.7275  
+Grid Search Test: 0.55  
 Sonuçlar ne yazıkki beklediğimden kötü çıktı. Bunun sebebinin veri setimin kötü ve küçük olmasından kaynaklı olduğunu düşünüyorum.
 
 
