@@ -57,14 +57,14 @@ Sonuçlar ne yazıkki beklediğimden kötü çıktı. Bunun sebebinin veri setim
 # Tekrardan
 Buradan sonrası tekrar bir veri seti bulup onu temizleyip aynı modellerimde test edilmesini anlatıyor.
 ## Veri setinin oluşturulması
-* İnternetten daha büyük bir veri seti bulamaya çalıştım. Ve aşağıdaki linkte türkçe yorumların olduğunu da gördüm.  
-[veri setinin linkine buraya tıklayarak ulaşabilirsiniz](https://www.kaggle.com/datasets/sridharstreaks/game-reviews-dataset?select=review_info.csv)  
-* İlk olarak languages sütunundan turkish olarak işaretlenmiş yorumları ayıklayıp bir excel dosyasına kayıt ettim. 21320 adet Türkçe yorum varmış.
-<img src="pictures/v2.1.png" width =800 height = 600>
-* Daha sonra aldığım hata yüzünden review satırını stringe dönüştürüp her satıra clean_text fonksiyonunu uyguladım.
-<img src="pictures/v2.2.png" >
-* Daha elle tutulur bir veri seti:
-<img src="pictures/v2.3.png" width =600 height = 600>
+İnternetten daha büyük bir veri seti bulamaya çalıştım. Ve aşağıdaki linkte türkçe yorumların olduğunu da gördüm.  
+[veri setinin linkine buraya tıklayarak ulaşabilirsiniz](https://www.kaggle.com/datasets/sridharstreaks/game-reviews-dataset?select=review_info.csv)   
+İlk olarak languages sütunundan turkish olarak işaretlenmiş yorumları ayıklayıp bir excel dosyasına kayıt ettim. 21320 adet Türkçe yorum varmış.  
+<img src="pictures/v2.1.png" width =800 height = 600>  
+Daha sonra aldığım hata yüzünden review satırını stringe dönüştürüp her satıra clean_text fonksiyonunu uyguladım.  
+<img src="pictures/v2.2.png" >  
+Daha elle tutulur bir veri seti:  
+<img src="pictures/v2.3.png" width =600 height = 600>  
 
 ### Verilerin etiketlenmesi
 - Verilerin recomended satırında DOĞRU ve YANLIŞ olarak etiketlendiğini gördüm. O yüzden o etiketleri kullanarak yeni bir etiket satırı açıp DOĞRU için 1, YANLIŞ için 0 olarak etiketledim. Daha sonra yazdığım kodun işe yaramadığını gördüm çünkü recommended sütunu boolean olarak True ve False olarak işaretlenmiş. Kodlarımı ona göre değiştim ve etiketleme işlemini de tamamladım.
