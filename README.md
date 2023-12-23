@@ -45,15 +45,37 @@ print("NB Test F1:", f1_score(y_test, predictions_test))
 
 ### DecisionTree Modeli 
 
+Öğretici modellerimizi fit ettik.
+```
+model_DT = DecisionTreeClassifier()
+model_DT.fit(X_train, y_train)
+```
+DT modelinde de hazırda bulunan fonksiyonlarla **F1Score0**'u hesaplattık.
+```
+print("DT train accuracy:", model_DT.score(X_train, y_train))
+print("DT test accuracy:", model_DT.score(X_test, y_test))
+
+predictions_train = model_DT.predict(X_train)
+print("DT Train F1:", f1_score(y_train, predictions_train))
+
+predictions_test = model_DT.predict(X_test)
+print("DT Test F1:", f1_score(y_test, predictions_test))
+```
+
+### Grid Search Modeli
+
 
 
 
 ## Modelde Test Edilmesi
 Derste yaptığımız NB ,Desicion Tree, Grid Search örneklerini kendi veri setime göre düzelterek yazdım.  
 ### Farklı Modellerdeki Sonuçlar:  
-NB Test F1 Score: 0.7401574803149606  
-DT Test F1 Score: 0.6346153846153846  
-Grid Search: 0.54  
+NB Train F1: 0.9428007889546351  
+NB Test F1: 0.7401574803149606  
+DT Train F1: 0.9979035639412999  
+DT Test F1: 0.6666666666666666   
+Grid Search Train: 0.7275
+Grid Search Test: 0.55
 Sonuçlar ne yazıkki beklediğimden kötü çıktı. Bunun sebebinin veri setimin kötü ve küçük olmasından kaynaklı olduğunu düşünüyorum.
 
 
@@ -73,7 +95,14 @@ Daha elle tutulur bir veri seti:
 - Verilerin recomended satırında DOĞRU ve YANLIŞ olarak etiketlendiğini gördüm. O yüzden o etiketleri kullanarak yeni bir etiket satırı açıp DOĞRU için 1, YANLIŞ için 0 olarak etiketledim. Daha sonra yazdığım kodun işe yaramadığını gördüm çünkü recommended sütunu boolean olarak True ve False olarak işaretlenmiş. Kodlarımı ona göre değiştim ve etiketleme işlemini de tamamladım.
 - ```df['etiket'] = df['recommended'].apply(lambda x: 1 if x == True else 0)```
 
-## Modelde test edilmesi
+## Modellerimizdeki Sonuçlar:
+
+NB Train F1: 0.915979466799139  
+NB Test F1: 0.91053257565746  
+DT Train F1: 0.9967115961406424  
+DT Test F1: 0.9028392067341989   
+Grid Search Train: 0.8585968738640495  
+Grid Search Test:0.8507390356190938  
 
 
 
