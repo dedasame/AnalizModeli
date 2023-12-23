@@ -13,6 +13,9 @@ Temizlenmiş verileri kontrol etmek için derste kullandığımız fonksiyonu ku
 <img src="pictures/dataset_v2.png" width =600 height = 600>  
 
 ## Modelin Oluşturulması
+
+
+## Modelde Test Edilmesi
 Derste yaptığımız NB ,Desicion Tree, Grid Search örneklerini kendi veri setime göre düzelterek yazdım.  
 ### Farklı Modellerdeki Sonuçlar:  
 NB Test F1 Score: 0.7401574803149606  
@@ -34,10 +37,11 @@ Buradan sonrası tekrar bir veri seti bulup onu temizleyip aynı modellerimde te
 <img src="pictures/v2.3.png" width =600 height = 600>
 
 ### Verilerin etiketlenmesi
-- Verilerin recomended satırında DOĞRU ve YANLIŞ olarak etiketlendiğini gördüm. O yüzden o etiketleri kullanarak yeni bir etiket satırı açıp DOĞRU için 1, YANLIŞ için 0 olarak etiketledim. Daha sonra yazdığım kodun işe yaramadığını gördüm çünkü recommended sütunu boolean olarak True ve False işaretlenmiş. Kodlarımı ona göre değiştim ve etiketleme işlemnini de tamamladım.
+- Verilerin recomended satırında DOĞRU ve YANLIŞ olarak etiketlendiğini gördüm. O yüzden o etiketleri kullanarak yeni bir etiket satırı açıp DOĞRU için 1, YANLIŞ için 0 olarak etiketledim. Daha sonra yazdığım kodun işe yaramadığını gördüm çünkü recommended sütunu boolean olarak True ve False olarak işaretlenmiş. Kodlarımı ona göre değiştim ve etiketleme işlemini de tamamladım.
 - ```df['etiket'] = df['recommended'].apply(lambda x: 1 if x == True else 0)```
 
 ## Modelde test edilmesi
+
 
 
 
