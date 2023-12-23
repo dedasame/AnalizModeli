@@ -117,5 +117,6 @@ DT Test F1: 0.9028392067341989
 Grid Search Train: 0.8585968738640495  
 Grid Search Test:0.8507390356190938  
 
-Sanırım sonuçlar bir önceki veri setime göre daha iyi. Okuduğunuz için teşekkür ederim. :)
+Sanırım sonuçlar bir önceki veri setime göre daha iyi. 
+Eğer steam gibi bir yerden oyun yorumları ile alakalı veri çekim yöntemi bulabilseydim o şekilde çekip etiketleyecektim. Ancak ne yazıkki bulamadım. Google Play'de bir uygulama yüklemeden çekmeme izin verilmiyordu. Bende son çarem olarak kaggle'dan hazır seti kullandım.
 
