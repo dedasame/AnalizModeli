@@ -45,6 +45,9 @@ print("NB Test F1:", f1_score(y_test, predictions_test))
 
 ### DecisionTree Modeli 
 
+
+
+
 ## Modelde Test Edilmesi
 Derste yaptığımız NB ,Desicion Tree, Grid Search örneklerini kendi veri setime göre düzelterek yazdım.  
 ### Farklı Modellerdeki Sonuçlar:  
