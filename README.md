@@ -96,7 +96,7 @@ Daha elle tutulur bir veri seti:
 - ```df['etiket'] = df['recommended'].apply(lambda x: 1 if x == True else 0)```
 
 ## Modellerimizdeki Sonuçlar:
-
+Aynı model kodlarında test etmeye çalıştım ancak birkaç hata oldum tam olarak anlamadım ama X'i tanımlarken str.lower() , astype('U') değişikliklerini yaptım ve çalıştı. Genel hatlarıyla aynı modelleri kullandım. Aşağıda sonuçları:  
 NB Train F1: 0.915979466799139  
 NB Test F1: 0.91053257565746  
 DT Train F1: 0.9967115961406424  
