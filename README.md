@@ -20,8 +20,7 @@ Temizlenmiş verileri kontrol etmek için derste kullandığımız fonksiyonu ku
 X = df.clean.to_numpy()
 y = df.etiket.to_numpy()
 ```
-Derste yaptığımız gibi test %20'lik kısmını test setine kayıt ediyoruz.  
-``` X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42) ```   
+Derste yaptığımız gibi test %20'lik kısmını test setine kayıt ediyoruz. ``` X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42) ```  
 Öğretici verilerimizin bulunduğu **X_train**'i veri setimize fit ederken test setimiz olan **X_test** verimizi transform ediyoruz. Daha sonra Bayes modelimizi eğitiyoruz.
 ```
 vectorizer = TfidfVectorizer()
