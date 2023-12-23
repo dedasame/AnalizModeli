@@ -22,7 +22,7 @@
 - DT Test F1 Score: 0.6346153846153846
 - Grid Search: 0.54
 - Sonuçlar ne yazıkki beklediğimden kötü çıktı. Bunun sebebinin veri setimin kötü ve küçük olmasından kaynaklı olduğunu düşünüyorum.
-# Tekrardan;
+## Tekrardan;
 ## Veri setinin oluşturulması
 #### ikinci deneme klasöründeki kodların açıklaması
 - İnternetten daha büyük bir veri seti bulamaya çalıştım. Ve aşağıdaki linkte türkçe yorumların olduğunu da gördüm. 
