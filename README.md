@@ -14,6 +14,36 @@ Temizlenmiş verileri kontrol etmek için derste kullandığımız fonksiyonu ku
 
 ## Modelin Oluşturulması
 
+### Bayes Modeli
+İlk önce **clean** ve **etiket** sütunlarımızı numpy array olarak dönüştürüyoruz.  
+```
+X = df.clean.to_numpy()
+y = df.etiket.to_numpy()
+```
+Derste yaptığımız gibi test %20'lik kısmını test setine kayıt ediyoruz.
+``` X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42) ```  
+Öğretici verilerimizin bulunduğu **X_train**'i veri setimize fit ederken test setimiz olan **X_test** verimizi transform ediyoruz. Daha sonra Bayes modelimizi eğitiyoruz.
+```
+vectorizer = TfidfVectorizer()
+
+X_train = vectorizer.fit_transform(X_train)
+X_test = vectorizer.transform(X_test)
+
+model_NB = MultinomialNB()
+model_NB.fit(X_train, y_train)
+```
+Eğitilmiş Bayes modelimizin direkt **F1 score**'unu aşağıdaki gibi hesaplatarak modelimizin doğruluk oranını öğrenebiliriz.
+```
+print("NB train accuracy:", model_NB.score(X_train, y_train))
+print("NB test accuracy:", model_NB.score(X_test, y_test))
+
+predictions_train = model_NB.predict(X_train)
+print("NB Train F1:", f1_score(y_train, predictions_train))
+
+predictions_test = model_NB.predict(X_test)
+print("NB Test F1:", f1_score(y_test, predictions_test))
+```
+### DecisionTree Modeli 
 
 ## Modelde Test Edilmesi
 Derste yaptığımız NB ,Desicion Tree, Grid Search örneklerini kendi veri setime göre düzelterek yazdım.  
