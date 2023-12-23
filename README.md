@@ -28,9 +28,9 @@
 - İnternetten daha büyük bir veri seti bulamaya çalıştım. Ve aşağıdaki linkte türkçe yorumların olduğunu da gördüm. 
 - https://www.kaggle.com/datasets/sridharstreaks/game-reviews-dataset?select=review_info.csv
 - İlk olarak languages sütunundan turkish olarak işaretlenmiş yorumları ayıklayıp bir excel dosyasına kayıt ettim. 21320 adet Türkçe yorum varmış.
-<img src="pictures/v2.1.png" width =600 height = 600>
+<img src="pictures/v2.1.png" width =800 height = 600>
 - Daha sonra aldığım hata yüzünden review satırını stringe dönüştürüp her satıra clean_text fonksiyonunu uyguladım.
-<img src="pictures/v2.2.png" width =600 height = 600>
+<img src="pictures/v2.2.png" >
 - Daha elle tutulur bir veri seti:
 <img src="pictures/v2.3.png" width =600 height = 600>
 ## Verilerin etiketlenmesi
