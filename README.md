@@ -34,5 +34,5 @@
 - Daha elle tutulur bir veri seti:
 <img src="pictures/v2.3.png" width =600 height = 600>
 ## Verilerin etiketlenmesi
-- 
+- Verilerin recomended satırında DOĞRU ve YANLIŞ olarak etiketlendiğini gördüm. O yüzden o etiketleri kullanarak yeni bir etiket satırı açıp DOĞRU için 1, YANLIŞ için 0 olarak etiketledim. 
 
