@@ -45,7 +45,7 @@ print("NB Test F1:", f1_score(y_test, predictions_test))
 
 ### DecisionTree Modeli 
 
-Öğretici modellerimizi fit ettik.
+Öğretici verilerimizi modele fit ettik.
 ```
 model_DT = DecisionTreeClassifier()
 model_DT.fit(X_train, y_train)
