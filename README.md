@@ -5,13 +5,15 @@
 <img src="pictures/Dataset.png" width =600 height = 300>
 
 ## Veri Setini Temizleme
-- Bende derslerde kullandığımız stop_word dosyasını kullandım. Ve temizlemek için clean_text fonksiyonunu kullandım. Veri setimizi aşağıdaki fotoğraftaki gibi görebiliyoruz.
-<img src="pictures/dataset_v1.png" width =600 height = 600>
-- Daha sonra ``` df['clean'] = df['yorumlar'].apply(clean_text) ``` ile bütün yorumalar satırları üzerinde clean_text fonksiyonumuzu uygulayıp clean isimli sütuna kayıt ediyoruz. ``` df.to_excel('temizlenmis_veriler.xlsx', index=False) ``` ile de yeni dosyamızı excel olarak tekrar kayıt ediyoruz. Temizlenmiş verileri kontrol etmek için derste kullandığımız fonksiyonu kullanıyorum.  
+Bende derslerde kullandığımız stop_word dosyasını kullandım. Ve temizlemek için clean_text fonksiyonunu kullandım. Veri setimizi aşağıdaki fotoğraftaki gibi görebiliyoruz.  
+<img src="pictures/dataset_v1.png" width =600 height = 600>  
+Daha sonra ``` df['clean'] = df['yorumlar'].apply(clean_text) ``` ile bütün yorumalar satırları üzerinde clean_text fonksiyonumuzu uygulayıp clean isimli sütuna kayıt ediyoruz.  
+ ``` df.to_excel('temizlenmis_veriler.xlsx', index=False) ``` ile de yeni dosyamızı excel olarak tekrar kayıt ediyoruz.  
+Temizlenmiş verileri kontrol etmek için derste kullandığımız fonksiyonu kullanıyorum.   
 <img src="pictures/dataset_v2.png" width =600 height = 600>  
 
 ## Modelin Oluşturulması
-- Derste yaptığımız NB ,Desicion Tree, Grid Search örneklerini kendi veri setime göre düzelterek yazdım.  
+Derste yaptığımız NB ,Desicion Tree, Grid Search örneklerini kendi veri setime göre düzelterek yazdım.  
 ### Farklı Modellerdeki Sonuçlar:  
 NB Test F1 Score: 0.7401574803149606  
 DT Test F1 Score: 0.6346153846153846  
@@ -23,8 +25,9 @@ Sonuçlar ne yazıkki beklediğimden kötü çıktı. Bunun sebebinin veri setim
 Buradan sonrası tekrar bir veri seti bulup onu temizleyip aynı modellerimde test edilmesini anlatıyor.
 ## Veri setinin oluşturulması
 #### ikinci deneme klasöründeki kodların açıklaması
-İnternetten daha büyük bir veri seti bulamaya çalıştım. Ve aşağıdaki linkte türkçe yorumların olduğunu da gördüm. https://www.kaggle.com/datasets/sridharstreaks/game-reviews-dataset?select=review_info.csv 
-- İlk olarak languages sütunundan turkish olarak işaretlenmiş yorumları ayıklayıp bir excel dosyasına kayıt ettim. 21320 adet Türkçe yorum varmış.
+İnternetten daha büyük bir veri seti bulamaya çalıştım. Ve aşağıdaki linkte türkçe yorumların olduğunu da gördüm.  
+[link](https://www.kaggle.com/datasets/sridharstreaks/game-reviews-dataset?select=review_info.csv)  
+İlk olarak languages sütunundan turkish olarak işaretlenmiş yorumları ayıklayıp bir excel dosyasına kayıt ettim. 21320 adet Türkçe yorum varmış.
 <img src="pictures/v2.1.png" width =800 height = 600>
 - Daha sonra aldığım hata yüzünden review satırını stringe dönüştürüp her satıra clean_text fonksiyonunu uyguladım.
 <img src="pictures/v2.2.png" >
