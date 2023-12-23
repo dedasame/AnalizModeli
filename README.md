@@ -25,6 +25,7 @@
 #### ikinci deneme klasöründeki kodların açıklaması
 - Bu yüzden internetten daha büyük bir veri seti bulamaya çalıştım. 
 - https://www.kaggle.com/datasets/sridharstreaks/game-reviews-dataset?select=review_info.csv
+- 
 ``` languages = ["turkish"] ```
 ``` df = df[df.language.isin(languages)].copy() ```
 ``` df.to_excel('turkce_veriler.xlsx', index=False) ``` bu kodlarla sadece türkçe yorumları ayıkladık.
