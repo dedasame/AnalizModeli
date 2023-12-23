@@ -2,8 +2,9 @@
 İlk denememde sonuçalar biraz düşük olduğu için yeni bir veri setiyle tekrar denedim. O yüzden ilk denememdeki dosyalar İlk Deneme klasöründe ikinci denemem ise ikinci deneme klasörümde.
 ## Veri Setinin oluşturulması
 - Öncelikle steamden seçtiğim popüler oyunların mağaza sayfasından Müşteri İncelemelerinden verileri tek tek kopyalayıp excel'e kayıt ettim. Daha sonra Olumlu ise 1 - Olumsuz ise 0 yazarak etiketledim. + Olabildigince gördüğüm argo kelimeleri sansürlemeye çalıştım.
-<img src="pictures/Dataset.png" width =600 height = 300>  
-## Veri Setinin Temizlenmesi  
+<img src="pictures/Dataset.png" width =600 height = 300>
+
+## Veri Setini Temizleme
 * Bende derslerde kullandığımız stop_word dosyasını kullandım. Ve temizlemek için clean_text fonksiyonunu kullandım. Veri setimizi aşağıdaki fotoğraftaki gibi görebiliyoruz.
 <img src="pictures/dataset_v1.png" width =600 height = 600>
 * Daha sonra ``` df['clean'] = df['yorumlar'].apply(clean_text) ``` ile bütün yorumalar satırları üzerinde clean_text fonksiyonumuzu uygulayıp clean isimli sütuna kayıt ediyoruz. ``` df.to_excel('temizlenmis_veriler.xlsx', index=False) ``` ile de yeni dosyamızı excel olarak tekrar kayıt ediyoruz. Temizlenmiş verileri kontrol etmek için derste kullandığımız fonksiyonu kullanıyorum.  
