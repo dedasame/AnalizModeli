@@ -4,9 +4,9 @@
 - Öncelikle steamden seçtiğim popüler oyunların mağaza sayfasından Müşteri İncelemelerinden verileri tek tek kopyalayıp excel'e kayıt ettim. Daha sonra Olumlu ise 1 - Olumsuz ise 0 yazarak etiketledim. + Olabildigince gördüğüm argo kelimeleri sansürlemeye çalıştım.
 <img src="pictures/Dataset.png" width =600 height = 300>  
 ## Veri Setinin Temizlenmesi  
-- Bende derslerde kullandığımız stop_word dosyasını kullandım. Ve temizlemek için clean_text fonksiyonunu kullandım. Veri setimizi aşağıdaki fotoğraftaki gibi görebiliyoruz.
-<img src="pictures/dataset_v1.png" width =600 height = 600>    
-- Daha sonra ``` df['clean'] = df['yorumlar'].apply(clean_text) ``` ile bütün yorumalar satırları üzerinde clean_text fonksiyonumuzu uygulayıp clean isimli sütuna kayıt ediyoruz. ``` df.to_excel('temizlenmis_veriler.xlsx', index=False) ``` ile de yeni dosyamızı excel olarak tekrar kayıt ediyoruz. Temizlenmiş verileri kontrol etmek için derste kullandığımız fonksiyonu kullanıyorum.  
+* Bende derslerde kullandığımız stop_word dosyasını kullandım. Ve temizlemek için clean_text fonksiyonunu kullandım. Veri setimizi aşağıdaki fotoğraftaki gibi görebiliyoruz.
+<img src="pictures/dataset_v1.png" width =600 height = 600>
+* Daha sonra ``` df['clean'] = df['yorumlar'].apply(clean_text) ``` ile bütün yorumalar satırları üzerinde clean_text fonksiyonumuzu uygulayıp clean isimli sütuna kayıt ediyoruz. ``` df.to_excel('temizlenmis_veriler.xlsx', index=False) ``` ile de yeni dosyamızı excel olarak tekrar kayıt ediyoruz. Temizlenmiş verileri kontrol etmek için derste kullandığımız fonksiyonu kullanıyorum.  
 <img src="pictures/dataset_v2.png" width =600 height = 600>  
 
 ## Modelin Oluşturulması
