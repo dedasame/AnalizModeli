@@ -1,4 +1,4 @@
-# Oyunlar Feedback Analiz Modeli
+# Oyunlar için Feedback Analiz Modeli
 İlk denememde sonuçalar biraz düşük olduğu için yeni bir veri setiyle tekrar denedim. O yüzden ilk denememdeki dosyalar İlk Deneme klasöründe ikinci denemem ise ikinci deneme klasörümde.
 ## Veri Setinin oluşturulması
 - Öncelikle steamden seçtiğim popüler oyunların mağaza sayfasından Müşteri İncelemelerinden verileri tek tek kopyalayıp excel'e kayıt ettim. Daha sonra Olumlu ise 1 - Olumsuz ise 0 yazarak etiketledim. Ve olabildigince gördüğüm argo kelimeleri sansürlemeye çalıştım.
