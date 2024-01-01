@@ -15,7 +15,7 @@ Temizlenmiş verileri kontrol etmek için derste kullandığımız fonksiyonu ku
 ## Modelin Oluşturulması
 
 ### Bayes Modeli
-numpy, pandas ve string kütüphanelerini kullandım. İlk önce **clean** ve **etiket** sütunlarımızı numpy array olarak dönüştürüyoruz.  
+numpy, pandas ve string kütüphanelerini ve sklearn'deki hazır fonksiyonları kullandım. İlk önce **clean** ve **etiket** sütunlarımızı numpy array olarak dönüştürüyoruz.  
 ```
 X = df.clean.to_numpy()
 y = df.etiket.to_numpy()
@@ -44,7 +44,7 @@ print("NB Test F1:", f1_score(y_test, predictions_test))
 ```
 
 ### DecisionTree Modeli 
-numpy, pandas ve string kütüphanelerini kullandım. Öğretici verilerimizi modele fit ettik.
+numpy, pandas ve string kütüphanelerini ve sklearn'deki hazır fonksiyonları kullandım. Öğretici verilerimizi modele fit ettik.
 ```
 model_DT = DecisionTreeClassifier()
 model_DT.fit(X_train, y_train)
@@ -62,7 +62,7 @@ print("DT Test F1:", f1_score(y_test, predictions_test))
 ```
 
 ### Grid Search Modeli
-numpy kütüphanesini kullandım. Yukarıdakiler gibi numpy array'e çevirip X_Train X_test olarak ayırıyoruz. Daha sonra grid search yaparak en iyi parametreleri buluyoruz ve onları kullanarak modelimizi eğitiyoruz.  
+numpy kütüphanelerini ve sklearn'deki hazır fonksiyonları kullandım. Yukarıdakiler gibi numpy array'e çevirip X_Train X_test olarak ayırıyoruz. Daha sonra grid search yaparak en iyi parametreleri buluyoruz ve onları kullanarak modelimizi eğitiyoruz.  
 ```
 parameters = {"criterion": ["entropy", "gini", "log_loss"],
               "max_depth": range(2, 6)}
