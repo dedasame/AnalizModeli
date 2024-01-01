@@ -79,7 +79,7 @@ Eğitilmiş modelimizin oranını hesaplatıyoruz.
 print(tree.score(X_train, y_train))
 print(tree.score(X_test, y_test))
 ```
-Derste de söylendiği gibi yaptığım şey modele test setini overfit yapmış oldum. Çapraz doğrulamayı uygulayamadım.
+Derste de söylendiği gibi yaptığım şey modele test setini overfit yapmış oldum. Çapraz doğrulamayı uygulamadım.
 
 ## Modelde Test Edilmesi
 Derste yaptığımız NB ,Desicion Tree, Grid Search örneklerini kendi veri setime göre düzelterek yazdım.  
