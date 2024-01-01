@@ -62,7 +62,7 @@ predictions_test = model_DT.predict(X_test)
 print("DT Test F1:", f1_score(y_test, predictions_test))
 ```
 
-### Grid Search Modeli
+### Grid Search Modeli (Çapraz Doğrulama)
 
 Yukarıdakiler gibi numpy array'e çevirip X_Train X_test olarak ayırıyoruz. Daha sonra grid search yaparak en iyi parametreleri buluyoruz ve onları kullanarak modelimizi eğitiyoruz.  
 ```
