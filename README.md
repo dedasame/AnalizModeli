@@ -62,7 +62,7 @@ predictions_test = model_DT.predict(X_test)
 print("DT Test F1:", f1_score(y_test, predictions_test))
 ```
 
-### Grid Search Modeli (Çapraz Doğrulama)
+### Grid Search Modeli
 
 Yukarıdakiler gibi numpy array'e çevirip X_Train X_test olarak ayırıyoruz. Daha sonra grid search yaparak en iyi parametreleri buluyoruz ve onları kullanarak modelimizi eğitiyoruz.  
 ```
@@ -79,7 +79,7 @@ Eğitilmiş modelimizin oranını hesaplatıyoruz.
 print(tree.score(X_train, y_train))
 print(tree.score(X_test, y_test))
 ```
-Derste de söylendiği gibi yaptığım şey modele test setini overfit yapmış oldum.
+Derste de söylendiği gibi yaptığım şey modele test setini overfit yapmış oldum. Çapraz doğrulamayı uygulayamadım.
 
 ## Modelde Test Edilmesi
 Derste yaptığımız NB ,Desicion Tree, Grid Search örneklerini kendi veri setime göre düzelterek yazdım.  
