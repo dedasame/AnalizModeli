@@ -63,7 +63,7 @@ print("DT Test F1:", f1_score(y_test, predictions_test))
 
 
 ## Modelde Test Edilmesi
-Derste yaptığımız NB ,Desicion Tree, Grid Search örneklerini kendi veri setime göre düzelterek yazdım.  
+Derste yaptığımız NB ,Desicion Tree örneklerini kendi veri setime göre düzelterek yazdım.  
 ### Farklı Modellerdeki Sonuçlar:  
 NB Train F1: 0.9428007889546351  
 NB Test F1: 0.7401574803149606  
