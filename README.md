@@ -61,23 +61,6 @@ predictions_test = model_DT.predict(X_test)
 print("DT Test F1:", f1_score(y_test, predictions_test))
 ```
 
-### Grid Search Modeli
-numpy kütüphanelerini ve sklearn'deki hazır fonksiyonları kullandım. Yukarıdakiler gibi numpy array'e çevirip X_Train X_test olarak ayırıyoruz. Daha sonra grid search yaparak en iyi parametreleri buluyoruz ve onları kullanarak modelimizi eğitiyoruz.  
-```
-parameters = {"criterion": ["entropy", "gini", "log_loss"],
-              "max_depth": range(2, 6)}
-clf = GridSearchCV(DecisionTreeClassifier(), parameters,
-                   cv=5, n_jobs=4, verbose=3)
-clf.fit(X_train, y_train)
-print("Best score:", clf.best_score_, "Best params:", clf.best_params_)
-tree = clf.best_estimator_
-```
-Eğitilmiş modelimizin oranını hesaplatıyoruz.  
-```
-print(tree.score(X_train, y_train))
-print(tree.score(X_test, y_test))
-```
-Derste de söylendiği gibi yaptığım şey modele test setini overfit yapmış oldum. Çapraz doğrulamayı uygulamadım.
 
 ## Modelde Test Edilmesi
 Derste yaptığımız NB ,Desicion Tree, Grid Search örneklerini kendi veri setime göre düzelterek yazdım.  
@@ -86,8 +69,6 @@ NB Train F1: 0.9428007889546351
 NB Test F1: 0.7401574803149606  
 DT Train F1: 0.9979035639412999    
 DT Test F1: 0.6666666666666666     
-Grid Search Train: 0.7275  
-Grid Search Test: 0.55  
 Sonuçlar ne yazıkki beklediğimden kötü çıktı. Bunun sebebinin veri setimin kötü ve küçük olmasından kaynaklı olduğunu düşünüyorum.
 
 # Tekrardan
@@ -112,8 +93,6 @@ NB Train F1: 0.915979466799139
 NB Test F1: 0.91053257565746  
 DT Train F1: 0.9967115961406424  
 DT Test F1: 0.9028392067341989   
-Grid Search Train: 0.8585968738640495  
-Grid Search Test:0.8507390356190938  
 
 Sanırım sonuçlar bir önceki veri setime göre daha iyi.  
 
